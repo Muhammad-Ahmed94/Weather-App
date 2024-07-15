@@ -1,0 +1,109 @@
+$color-white: #f5f7f8;
+$color-back: #7d818f;
+$color-blue-light: #83b7d2;
+$color-blue-dark: #627ebe;
+
+$fontsize-small: 1.5rem;
+$fontsize-medium: 2.5rem;
+$fontsize-large: 4rem;
+
+html {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, verdana;
+    background-image: linear-gradient(180deg, rgba($color-blue-light, 0.9), rgba($color-blue-dark, 0.9));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.weather-header {
+    width: 100%;
+    height: 5rem;
+    border-bottom: 2px solid $color-back;
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+.appLogoBtn {
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-size: $fontsize-small;
+    margin: 0 0 1rem 2rem;
+}
+
+.weatherForm {
+    font-size: $fontsize-small;
+    margin-right: 2rem;
+
+    &-input {
+        border-radius: 10px;
+        padding: 1rem 2rem;
+        font-size: $fontsize-small;
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.weather-main {
+    height: 100vh;
+
+    &-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    & > * {
+        &:not(:last-child) {
+            margin-bottom: 10rem;
+        }
+    }
+}
+
+
+
+
+.weather-content {
+    &-main {
+        font-size: $fontsize-medium;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        & > * {
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
+
+.weather-sub-container {
+    display: flex;
+    justify-content: center;
+}
+
+.weather-content {
+    &-sub {
+        font-size: $fontsize-medium;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    & > * {
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+

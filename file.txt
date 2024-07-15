@@ -1,0 +1,17 @@
+colors
+color white #f5f7f8, rgb(245, 247, 248)
+back color #7d818f rgb(125, 129, 143)
+first blue rgb(131, 183, 210)
+to second blue rgb(98, 126, 190)
+font style Graphie is a sans serif font family,  is a sans serif font
+
+name: weather wizard, nimbus, zephyr, horizon
+
+features: 
+1. autogeolocation
+2. user input location
+3. weather details temperature, weather status (e.g., sunny, cloudy, rainy), humidity, wind speed, and sunrise/sunset time.
+4. day, date, time
+5. responsive and simple
+6. error handle in case geolocation fails or server not available.
+7. spotlight effect to start typing in search bar
