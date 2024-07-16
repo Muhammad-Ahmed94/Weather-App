@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>weatherapp</title>
 </head>
+
 <body>
     <div class="container">
         <header class="weather-header">
@@ -17,31 +19,28 @@
             <form class="weatherForm">
                 <label for="cityName" class="weatherForm-label">Enter location</label>
                 <input type="text" class="weatherForm-input" id="cityName" placeholder="city">
-                <button>Find</button>
+                <button type="submit">Find</button>
             </form>
         </header>
 
         <main class="weather-main">
             <div class="weather-main-container">
                 <div class="weather-content-main">
-                    <p class="weather-content_day">monday</p>
-                    <p class="weather-content_date">20 july 2022</p>
-                    <p class="weather-content_location">Rahim yar Khan</p>
+                    <img src="" alt="weather-icon" class="weatherIcon" style="display: none;">
                 </div>
             </div>
 
-            <div class="weather-sub-container">
+            <!-- <div class="weather-sub-container">
                 <div class="weather-content-sub">
-                    <p class="weather-content_emoji">🌞</p>
-                    <p class="weather-content_temperature">42.C</p>
-                    <p class="weather-content_windspeed">12km/h</p>
-                    <p class="weather-content_humidity">34%</p>
-                    <p class="weather-content_sunrise">06:00</p>
-                    <p class="weather-content_sunset">17:00</p>
+                    <img src="" alt="weather-icon" class="weatherIcon weather-content-sub" style="display: none;">
+
                 </div>
-            </div>
+            </div> -->
         </main>
 
     </div>
+
+    <script src="./index.js"></script>
 </body>
+
 </html>

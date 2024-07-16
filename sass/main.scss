@@ -22,6 +22,8 @@ body {
     background-image: linear-gradient(180deg, rgba($color-blue-light, 0.9), rgba($color-blue-dark, 0.9));
     background-repeat: no-repeat;
     height: 100vh;
+    overflow: hidden;
+
 }
 
 .weather-header {
@@ -63,6 +65,8 @@ body {
     &-container {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     & > * {
@@ -72,8 +76,10 @@ body {
     }
 }
 
-
-
+.weather-content-main,
+.weather-content-sub {
+    text-align: center;
+}
 
 .weather-content {
     &-main {
@@ -100,10 +106,16 @@ body {
         font-weight: 400;
         text-transform: uppercase;
     }
-    & > * {
-        &:not(:last-child) {
-            margin-bottom: 1.5rem;
-        }
-    }
 }
+
+.weatherIcon {
+    display: block;
+    margin-top: -10rem;
+}
+
+
+
+
+
+
 
